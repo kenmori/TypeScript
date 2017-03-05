@@ -1,11 +1,12 @@
-class Dog {
+class Cat {
     name: string;
     constructor(name:string){
         this.name = name;
     }
     sayHello(){
-        return this.name += "ワン";
+        return this.name += "だニャン";
     }
-}let shiro = new Dog("白太郎");
+}
+let mike = new Cat("三毛");
 
-document.body.innerHTML = shiro.sayHello();
+document.body.innerHTML = mike.sayHello();
