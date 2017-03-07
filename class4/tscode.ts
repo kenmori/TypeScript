@@ -26,7 +26,7 @@ class PremiumMember extends NormalMember {
 
 
 class MemberViewer {
-    memberArray: Member[];//NormalMemberかPremiumMemberが入る
+    memberArray: Member[];//Memberを実装したNormalMember型かPremiumMember型が入る
     constructor (){
         this.memberArray = new Array();
     }
