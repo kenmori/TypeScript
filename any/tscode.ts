@@ -3,8 +3,8 @@ showhere = document.body;
 
 
 let stringlike : any;
-stringlike = "fafa";
-//objctはダメ
+stringlike = "stringtext";
+//objectはダメ
 if( stringlike.length) {
     console.log("faf")
 }
