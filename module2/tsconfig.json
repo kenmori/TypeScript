@@ -1,0 +1,7 @@
+{
+	"compilerOptions": {
+      "module" : "amd"
+	}
+}
+//moduleとして書いたtsファイルは別のJSファイルとして書き出されるため outFileは削除する
+//module: amdを記述
