@@ -59,19 +59,17 @@ var TableDOM = (function (_super) {
     };
     return TableDOM;
 }(ElementDOM));
-var ButtonDOM = (function (_super) {
-    __extends(ButtonDOM, _super);
-    function ButtonDOM(labelStr) {
-        _super.call(this, "button");
-        this.addText(labelStr);
-    }
-    ButtonDOM.prototype.onClickShowSomething = function (showStr) {
-        this.elem.onclick = function () {
-            new DivElem(showStr).addToBody();
-        };
-    };
-    return ButtonDOM;
-}(ElementDOM));
+// class ButtonDOM extends ElementDOM {
+//     constructor(labelStr: string){
+//         super("button");
+//         this.addText(labelStr);
+//     }
+//     onClickShowSomething(showStr: string){
+//         this.elem.onclick = function(){
+//             new DivElem(showStr).addToBody();
+//         }
+//     }
+// }
 var birdTableData = [
     ["スズメ", "チュンチュン", "穀物"],
     ["ツバメ", "チュピチュピ", "虫"],
@@ -84,6 +82,6 @@ for (var _i = 0, birdTableData_1 = birdTableData; _i < birdTableData_1.length; _
     birdTable.addTableRow(TableRowDOM.createFromArray(row));
 }
 birdTable.addToBody();
-var bdom = new ButtonDOM("click me");
-bdom.onClickShowSomething("div is here");
-bdom.addToBody();
+// let bdom = new ButtonDOM("click me");
+// bdom.onClickShowSomething("div is here");
+// bdom.addToBody();

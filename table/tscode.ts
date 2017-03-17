@@ -32,6 +32,9 @@ class TableRowDOM extends ElementDOM {
         this.addChild(td);
     }
 }
+
+
+
 class DivElem extends ElementDOM {
     constructor(textStr?: string){
         super("div");
@@ -49,17 +52,19 @@ class TableDOM extends ElementDOM {
         this.addChild(row);
     }
 }
-class ButtonDOM extends ElementDOM {
-    constructor(labelStr: string){
-        super("button");
-        this.addText(labelStr);
-    }
-    onClickShowSomething(showStr: string){
-        this.elem.onclick = function(){
-            new DivElem(showStr).addToBody();
-        }
-    }
-}
+
+// class ButtonDOM extends ElementDOM {
+//     constructor(labelStr: string){
+//         super("button");
+//         this.addText(labelStr);
+//     }
+//     onClickShowSomething(showStr: string){
+//         this.elem.onclick = function(){
+//             new DivElem(showStr).addToBody();
+//         }
+//     }
+// }
+
 let birdTableData = [
     ["スズメ", "チュンチュン", "穀物"],
     ["ツバメ", "チュピチュピ", "虫"],
@@ -74,6 +79,6 @@ for (let row of birdTableData) {
 birdTable.addToBody();
 
 
-let bdom = new ButtonDOM("click me")
-bdom.onClickShowSomething("div is here");
-bdom.addToBody();
+// let bdom = new ButtonDOM("click me");
+// bdom.onClickShowSomething("div is here");
+// bdom.addToBody();
