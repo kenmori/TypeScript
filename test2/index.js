@@ -1,11 +1,11 @@
-var Dog = (function () {
-    function Dog(name) {
+var Cat = (function () {
+    function Cat(name) {
         this.name = name;
     }
-    Dog.prototype.sayHello = function () {
-        return this.name += "ワン";
+    Cat.prototype.sayHello = function () {
+        return this.name += "だニャン";
     };
-    return Dog;
+    return Cat;
 }());
-var shiro = new Dog("白太郎");
-document.body.innerHTML = shiro.sayHello();
+var mike = new Cat("三毛");
+document.body.innerHTML = mike.sayHello();
