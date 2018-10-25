@@ -1,8 +1,8 @@
 var showhere;
 showhere = document.body;
 var stringlike;
-stringlike = "fafa";
-//objctはダメ
+stringlike = "stringtext";
+//objectはダメ
 if (stringlike.length) {
     console.log("faf");
 }
