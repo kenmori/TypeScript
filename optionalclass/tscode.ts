@@ -5,7 +5,7 @@ class UniversalMember {
         this.username = "anonymous";//属性を空にしないclass
         this.realname = "匿名";
     }
-    static createMember(username?: string, realname?:string): UniversalMember {//ファクトリメソッド・・・メソッドの中でオブジェクトを作成して属性値を与えてそのオブジェクトを返すメソッド。staticにする
+    static createMember(username?: string, realname?:string): UniversalMember {//ファクトリメソッド・・・メソッドの中でオブジェクトを作成し属性値を与えてそのオブジェクトを返すメソッド。staticにする
         let member = new UniversalMember();
         if(username != null) {
             member.username = username;
